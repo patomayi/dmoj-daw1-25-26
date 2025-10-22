@@ -9,13 +9,12 @@ public class extracciodenumeros {
         //El teu codi aqui
         String palabra = sc.nextLine();
 
-//        p1 = p1.substring(1);
-//
-//        int l = p2.length();
-//        p2 = p2.substring(0,l-2);
-//        int n1 = Integer.valueOf(p1);
-//        int n2 = Integer.valueOf(p2);
-//        System.out.println(n1+n2);
+//        char a = palabra.charAt(1);
+//        char b = palabra.charAt(3);
+//        char c = palabra.charAt(5);
+//        char d = palabra.charAt(7);
+
+        System.out.println(Character.getNumericValue(palabra.charAt(1))+Character.getNumericValue(palabra.charAt(3))+Character.getNumericValue(palabra.charAt(5))+Character.getNumericValue(palabra.charAt(7)));
 
     }
 }
