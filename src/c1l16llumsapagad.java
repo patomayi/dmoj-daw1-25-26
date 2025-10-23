@@ -11,7 +11,7 @@ public class c1l16llumsapagad {
         boolean lum3 = sc.nextBoolean();
         boolean lum4 = sc.nextBoolean();
 
-        System.out.println(lum1 && lum2 && lum3 && lum4);
+        System.out.println(!lum1 && !lum2 && !lum3 && !lum4);
 
 
     }
