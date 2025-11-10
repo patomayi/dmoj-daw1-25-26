@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 class Llums {
@@ -25,7 +26,7 @@ class Llums {
 public class llumshabitacio {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        sc.useLocale(Locale.ENGLISH);
         // Llegim tres booleans separats per espai
         boolean l1 = sc.nextBoolean();
         boolean l2 = sc.nextBoolean();
