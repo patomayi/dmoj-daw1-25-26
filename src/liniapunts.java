@@ -8,8 +8,14 @@ public class liniapunts {
 
         //El teu codi aqui
         int punto = sc.nextInt();
+        int i = 0;
+        /*
         for (int i = 0; i < punto; i++) {
             System.out.print(".");
+        }*/
+        while (i<punto){
+            System.out.print(".");
+            i++;
         }
 
     }
