@@ -7,5 +7,19 @@ public class fizzbuzzfor {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+//revisar como invertir la cadena
+        for (int i = b; i <= a; i++){
+            if (i % 3 == 0){
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else if (i % 3 == 0 && i % 5 == 0){
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println(i);
+            }
+        }
     }
 }
