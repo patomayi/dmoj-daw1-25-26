@@ -7,12 +7,14 @@ public class c3l08showlinenumbers {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
-        String linea;
-        int i = 1;
-        while(!(linea = sc.nextLine()).equals("END")) {
-            System.out.println(" " + i + " | " + linea);
-            i++;
+        int cont = 1;
+        String linea = sc.nextLine();
+        do{
+            System.out.println((cont < 10 ? " ":"") + cont + " | " + linea);
+            linea = sc.nextLine();
+            cont++;
         }
+        while(!linea.equals("END"));
     }
 }
 

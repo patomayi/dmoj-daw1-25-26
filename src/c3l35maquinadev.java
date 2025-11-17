@@ -14,6 +14,8 @@ public class c3l35maquinadev {
         if (balance == 0) {
             System.out.println("Balance:" + balance);
             System.out.println("Insert coin");
+
+
         }
     }
 }
