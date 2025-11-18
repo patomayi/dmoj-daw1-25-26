@@ -7,15 +7,18 @@ public class calcularfibonacci {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
-        int n = 99;
-        int cont = 0;
-        if (n > 0) {
-            while (n == cont) {
-                n = sc.nextInt();
-                System.out.println(cont);
-                cont++;
-            }
-            System.out.print(1);
+        int n = sc.nextInt();
+        int fibo = 0;
+        int num = 1;
+        int siguiente;
+
+        int i = 0;
+        while (i < n){
+            siguiente = fibo + num;
+            fibo = num;
+            num = siguiente;
+            System.out.print(fibo + " ");
+            i++;
         }
     }
 }
