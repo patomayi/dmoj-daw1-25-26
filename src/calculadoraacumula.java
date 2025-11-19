@@ -7,11 +7,12 @@ public class calculadoraacumula {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
-        String linea = "";
-        float n = (float)0;
-        while(!linea.equals("END")){
+        /*Tengo que preguntar por que no se acaba el bucle;
+*/
+        String linea;
+        float n = 0;
+        do{
             linea = sc.nextLine();
-            linea.charAt(0);
             switch (linea.charAt(0)){
                 case '+':
                     n += Float.parseFloat(linea.substring(2));
@@ -30,8 +31,7 @@ public class calculadoraacumula {
                     System.out.println(n);
                     break;
             }
-
-        }
+        } while(!linea.equals("END"));;
 
 
 
