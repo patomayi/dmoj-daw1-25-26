@@ -7,5 +7,33 @@ public class calculadoraacumula {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
+        String linea = "";
+        float n = (float)0;
+        while(!linea.equals("END")){
+            linea = sc.nextLine();
+            linea.charAt(0);
+            switch (linea.charAt(0)){
+                case '+':
+                    n += Float.parseFloat(linea.substring(2));
+                    System.out.println(n);
+                    break;
+                case '-':
+                    n -= Float.parseFloat(linea.substring(2));
+                    System.out.println(n);
+                    break;
+                case '*':
+                    n *= Float.parseFloat(linea.substring(2));
+                    System.out.println(n);
+                    break;
+                case '/':
+                    n /= Float.parseFloat(linea.substring(2));
+                    System.out.println(n);
+                    break;
+            }
+
+        }
+
+
+
     }
 }
