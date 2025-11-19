@@ -7,33 +7,10 @@ public class calculadoraacumula {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
-        /*Tengo que preguntar por que no se acaba el bucle;
-*/
-        String linea;
+        int linea = 0;
         float n = 0;
-        do{
-            linea = sc.nextLine();
-            switch (linea.charAt(0)){
-                case '+':
-                    n += Float.parseFloat(linea.substring(2));
-                    System.out.println(n);
-                    break;
-                case '-':
-                    n -= Float.parseFloat(linea.substring(2));
-                    System.out.println(n);
-                    break;
-                case '*':
-                    n *= Float.parseFloat(linea.substring(2));
-                    System.out.println(n);
-                    break;
-                case '/':
-                    n /= Float.parseFloat(linea.substring(2));
-                    System.out.println(n);
-                    break;
-            }
-        } while(!linea.equals("END"));;
-
-
-
+        while(!sc.nextLine().equals("END")){
+            System.out.println("FIN");
+        }
     }
 }
