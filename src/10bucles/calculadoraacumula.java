@@ -7,10 +7,32 @@ public class calculadoraacumula {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
-        int linea = 0;
-        float n = 0;
-        while(!sc.nextLine().equals("END")){
-            System.out.println("FIN");
+
+        /*tengo problemas con este y debo continuar despues*/
+        float acum = 0;
+        String c = "";
+
+        while (!c.equals("END"))
+        {
+            c = sc.next();
+            float n = sc.nextFloat();
+            
+            if (c.equals('+')) {
+                acum += n;
+            } else if (c.equals('-')) {
+                acum -= n;
+            } else if (c.equals('*')) {
+                acum *= n;
+            } else if (c.equals('/')) {
+                acum /= n;
+            }
+            System.out.println(acum);
+            c = sc.next();
         }
+        
+        if (c.equals("END") && acum == 0) {
+            System.out.println(acum);
+        }
+
     }
 }
