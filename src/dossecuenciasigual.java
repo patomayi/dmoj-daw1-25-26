@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -12,15 +13,12 @@ public class dossecuenciasigual {
         for(int i = 0; i < n; i++) {
             sec1[i] = sc.nextInt();
         }
+
         int m = sc.nextInt();
         int[] sec2 = new int[m];
-        for(int j = 0; j < m; j++){
+        for(int j = 0; j < m; j++) {
             sec2[j] = sc.nextInt();
         }
-        if(n == m){
-            System.out.println(sec1 == sec2);
-        }else{
-            System.out.println(false);
-        }
+        System.out.println(Arrays.equals(sec1, sec2));
     }
 }
