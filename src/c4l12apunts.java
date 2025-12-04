@@ -8,16 +8,13 @@ public class c4l12apunts {
 
         //LLENA LOS DATOS BIEN
         int tam = sc.nextInt();
-        String[] cadena = new String[tam];
+        String[] arreglo = new String[tam];
         for (int i = 0; i < tam; i++) {
             int n = sc.nextInt();
-            cadena[n-1] = sc.nextLine();
+            arreglo[n-1] = sc.nextLine();
         }
         for (int i = 0; i < tam; i++) {
-            System.out.print(i+1+" ");
-            System.out.println(cadena[i]);
+            System.out.println(i+1+" "+arreglo[i]);
         }
-
-
     }
 }
