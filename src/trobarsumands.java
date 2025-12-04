@@ -8,12 +8,23 @@ public class trobarsumands {
         sc.useLocale(Locale.ENGLISH);
 
         //El teu codi aqui
-        int suma = sc.nextInt();
+        int res = sc.nextInt();
         int tam = sc.nextInt();
         int[] array = new int[tam];
-        int sumatoria = 0;
+        int num = 0;
+
         for (int i = 0; i < tam; i++){
             array[i] = sc.nextInt();
+        }
+        for (int j = 0; j < tam; j++){
+            int n1 = array[j];
+                for (int k = 0; k < tam; k++){
+                    if(n1+array[k] == res){
+//                        muestra los resultados dos veces
+                        System.out.println(n1+" "+array[k]);
+                        break;
+                    }
+                }
         }
     }
 }
