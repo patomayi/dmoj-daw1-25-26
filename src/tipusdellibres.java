@@ -15,7 +15,10 @@ public class tipusdellibres {
         for (int j = 0; j < tam; j++){
             cantidad[j] = sc.nextInt();
         }
+
         int menor = cantidad[0];
+
+        //el programa
         for (int k = 1; k < tam; k++) {
             if (cantidad[k] < menor) {
                 menor = cantidad[k];

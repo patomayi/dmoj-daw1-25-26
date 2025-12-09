@@ -1,6 +1,6 @@
 import java.util.Locale;
 import java.util.Scanner;
-
+//Dada una secuencia de números, ordenarla en orden ascendente.
 public class ordenarsecuencia {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

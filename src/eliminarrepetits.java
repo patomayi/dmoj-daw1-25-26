@@ -1,3 +1,4 @@
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -6,21 +7,22 @@ public class eliminarrepetits {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-        //El teu codi aqui
-        int tam = sc.nextInt();
-        String[] array = new String[tam];
+        //POSIBLE ERROR NO IMPRIME EL PRIMERO
 
+        int tam = sc.nextInt();
+        String[] array= new String[tam];
+        //llenado
         for(int i = 0; i < tam; i++){
             array[i] = sc.next();
         }
-        for(int j = 0; j < tam; j++){
-            for(int k = 0; k < tam; k++){
-
-                boolean saber = true;
-                if(!array[k].equals(array[j])){
-                    System.out.print(array[k]+" ");
-                }
+        //comparar
+        for(int j = 0; j < tam - 1; j++){
+            if(!array[j].equals(array[j+1])) {
+                System.out.print(array[j+1] + " ");
             }
         }
+//        if (tam > 0) {
+//            System.out.print(array[tam - 1]);
+//        }
     }
 }

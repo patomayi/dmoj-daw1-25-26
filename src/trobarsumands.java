@@ -16,6 +16,7 @@
                 array[i] = sc.nextInt();
             }
             boolean encontrado = false;
+
             for (int j = 0; j < tam; j++){
                 int n1 = array[j];
                 for (int k = j + 1; k < tam; k++){  // Empezar desde j+1 para evitar repeticiones
