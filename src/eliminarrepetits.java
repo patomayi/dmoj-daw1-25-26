@@ -7,22 +7,32 @@ public class eliminarrepetits {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-        //POSIBLE ERROR NO IMPRIME EL PRIMERO
-
         int tam = sc.nextInt();
         String[] array= new String[tam];
         //llenado
         for(int i = 0; i < tam; i++){
             array[i] = sc.next();
         }
-        //comparar
-        for(int j = 0; j < tam - 1; j++){
-            if(!array[j].equals(array[j+1])) {
-                System.out.print(array[j+1] + " ");
+
+        //imprimir solo elementos únicos (primera aparición)
+        boolean primero = true;
+        for(int i = 0; i < tam; i++){
+            boolean repetido = false;
+            //verificar si ya apareció antes
+            for(int j = 0; j < i; j++){
+                if(array[i].equals(array[j])){
+                    repetido = true;
+                    break;
+                }
+            }
+            //imprimir si no está repetido
+            if(!repetido){
+                if(!primero){
+                    System.out.print(" ");
+                }
+                System.out.print(array[i]);
+                primero = false;
             }
         }
-//        if (tam > 0) {
-//            System.out.print(array[tam - 1]);
-//        }
     }
 }
