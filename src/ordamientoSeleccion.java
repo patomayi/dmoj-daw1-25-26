@@ -8,15 +8,16 @@ public class ordamientoSeleccion {
 
         int t = sc.nextInt();
         int[] A = new int[t];
-        //El teu codi aqui
+        //Llenar array
         int i, j, menor, pos, tmp;
         for(int k = 0; k < t; k++){
             A[k] = sc.nextInt();
         }
-        for (i = 0; i < t - 1; i++) {      // tomamos como menor el primero
+        //Ordenamiento por Selección:
+        for (i = 0; i < t-1; i++) {      // tomamos como menor el primero
             menor = A[i];                  // de los elementos que quedan por ordenar
             pos = i;                       // y guardamos su posición
-            for (j = i + 1; j < t; j++){   // buscamos en el resto
+            for (j = i+1; j < t; j++){   // buscamos en el resto
                 if (A[j] < menor) {        // del array algún elemento
                     menor = A[j];          // menor que el actual
                     pos = j;
@@ -27,6 +28,7 @@ public class ordamientoSeleccion {
                 A[i] = A[pos];
                 A[pos] = tmp;
             }
+
         }
         for(int w : A){
             System.out.print(w+" ");
