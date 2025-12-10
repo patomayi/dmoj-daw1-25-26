@@ -26,6 +26,7 @@ public class eliminarrepetits {
                 }
             }
             //imprimir si no está repetido
+            //Hay que simplificaarlo mas:
             if(!repetido){
                 if(!primero){
                     System.out.print(" ");

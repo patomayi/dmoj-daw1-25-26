@@ -9,6 +9,8 @@ public class tipusdellibres {
         int tam = sc.nextInt();
         String[] libros = new String[tam];
         int[] cantidad = new int[tam];
+
+        //Llenar:
         for (int i = 0; i < tam; i++) {
             libros[i] = sc.next();
         }
@@ -17,7 +19,6 @@ public class tipusdellibres {
         }
 
         int menor = cantidad[0];
-
         //el programa
         for (int k = 1; k < tam; k++) {
             if (cantidad[k] < menor) {
