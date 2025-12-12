@@ -20,28 +20,24 @@ public class lasaltarina {
             camino[i] = sc.nextInt();
         }
 
-        for(int j = 0; j < longitud / 2; j++){
+        for(int j = 0; j <longitud / 2; j++){
             if (camino[j] == -1){
-                break;
-            }else if (camino[j] == 0){
                 pasosI++;
-                energiaI++;
-            }else {
-                pasosI += camino[j];
-                energiaI += camino[j]*2;
+                break;
+            }else if (camino[j] > 0){
+                energiaI+=camino[j]*2;
             }
+            pasosI++;
         }
 
-        for(int k = longitud-1; k >= longitud / 2; k--){
+        for(int k = longitud-1; k >= (longitud / 2)+1; k--){
             if (camino[k] == -1){
-                break;
-            }else if (camino[k] == 0){
                 pasosD++;
-                energiaD++;
-            }else {
-                pasosD += camino[k];
-                energiaD += camino[k]*2;
+                break;
+            }else if (camino[k] > 0){
+                energiaD+=camino[k]*2;
             }
+            pasosD++;
         }
         System.out.println("Pel cantó dret, s'arriba al tresor en "+ pasosD +" passos consumint "+energiaD+" unitats d'energia.");
         System.out.println("Pel cantó esquerra, s'arriba al tresor en "+ pasosI +" passos consumint "+energiaI+" unitats d'energia.");
