@@ -5,7 +5,12 @@ public class lasaltarina {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
-
+        //FALTA ACABAR
+        //CASO 7:
+        //27 20
+        //2 1 3 0 2 9 0 0 0 1 0 0 2 0 1 -1 0 0 0 0 2 0 2 0 3 3 3
+        //Pel cantó dret, no es pot arribar al tresor perquè s'acaba l'energia.
+        //Pel cantó esquerra, no es pot arribar al tresor perquè s'acaba l'energia.
         //El teu codi aqui
         int longitud = sc.nextInt();
         int energia = sc.nextInt();
