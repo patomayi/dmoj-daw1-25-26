@@ -67,7 +67,5 @@ public class lasaltarina {
         }else {
             System.out.println("Pel cantó esquerra, s'arriba al tresor en "+ pasosI +" passos consumint "+energiaI+" unitats d'energia.");
         }
-
-
     }
 }
