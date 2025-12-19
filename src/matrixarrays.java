@@ -10,12 +10,21 @@ public class matrixarrays {
         int tam1 = sc.nextInt();
         int tam2 = sc.nextInt();
         int[][] array = new int[tam1][tam2];
-        int[] sumasFilas = new int[array.length];
 
         for(int i = 0; i < tam1; i++){
             for (int j = 0; j < tam2; j++) {
                 array[i][j] = sc.nextInt();
             }
         }
+        int contador0 = 0;
+        int contador1 = 0;
+        for(int i = 0; i < tam1; i++){
+            for (int j = 0; j < tam2; j++) {
+                if(array[i][j] == 0) contador0++;
+                else if (array[i][j]==1) contador1++;
+                else break;
+            }
+        }
+        System.out.println(contador0+" "+contador1);
     }
 }
