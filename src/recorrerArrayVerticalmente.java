@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class matrixarrays {
+public class recorrerArrayVerticalmente {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
@@ -13,18 +13,13 @@ public class matrixarrays {
 
         for(int i = 0; i < fila; i++){
             for (int j = 0; j < col; j++) {
-                matriz[i][j] = sc.nextInt();
+                matriz [i][j] = sc.nextInt();
             }
         }
-        int contador0 = 0;
-        int contador1 = 0;
-        for(int i = 0; i < fila; i++){
-            for (int j = 0; j < col; j++) {
-                if(matriz[i][j] == 0) contador0++;
-                else if (matriz[i][j]==1) contador1++;
-                else break;
+        for (int i = 0; i < col; i++) {
+            for (int j = 0; j < fila; j++) {
+                System.out.println(matriz[j][i]+" ");
             }
         }
-        System.out.println(contador0+" "+contador1);
     }
 }
