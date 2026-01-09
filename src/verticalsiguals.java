@@ -1,9 +1,12 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class verticalsiguals {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.ENGLISH);
 
+        //El teu codi aqui
         int filas = sc.nextInt();
         int columnas = sc.nextInt();
 
@@ -29,13 +32,11 @@ public class verticalsiguals {
                     break;
                 }
             }
-
             if (iguales) {
                 columnaEncontrada = j;
                 break; // solo queremos la primera
             }
         }
-
         // Mostrar resultado
         if (columnaEncontrada != -1) {
             System.out.println("La columna " + columnaEncontrada + " té tots els números iguals.");
