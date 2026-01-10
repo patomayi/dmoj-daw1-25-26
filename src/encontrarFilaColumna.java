@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class bomberman2 {
+public class encontrarFilaColumna {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
