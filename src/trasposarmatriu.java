@@ -1,15 +1,17 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class encontrarFilaColumna {
+public class trasposarmatriu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.ENGLISH);
 
-        // Leer tamaño del tablero
+        // Leer
         int filas = sc.nextInt();
         int columnas = sc.nextInt();
 
         int[][] matriz = new int[filas][columnas];
+        int[][] mat2 = new int[columnas][filas];
 
         // llenar
         for (int f = 0; f < filas; f++) {
@@ -17,27 +19,17 @@ public class encontrarFilaColumna {
                 matriz[f][c] = sc.nextInt();
             }
         }
-        int n = sc.nextInt();
-        int auxFila = 0;
-        int auxColumna = 0;
+
         for (int f = 0; f < filas; f++) {
             for (int c = 0; c < columnas; c++) {
-                if (n == matriz[f][c]){
-                    auxFila = f;
-                    auxColumna = c;
-                    //guardar los arrays
-                }
+                mat2[c][f] = matriz[f][c];
             }
         }
-        for (int f = 0; f < filas; f++) {
-            for (int c = 0; c < columnas; c++) {
-                if(f == auxFila || c == auxColumna){
-                    System.out.print("@");
-                }
-                else System.out.print("#");
+        for (int i = 0; i < columnas; i++) {
+            for (int j = 0; j < filas; j++) {
+                System.out.print(mat2[i][j]+" ");
             }
             System.out.println();
         }
     }
 }
-

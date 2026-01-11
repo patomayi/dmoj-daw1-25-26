@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class bomberman2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        sc.useLocale(Locale.ENGLISH);
+
 
         // Leer tamaño del tablero
         int filas = sc.nextInt();
