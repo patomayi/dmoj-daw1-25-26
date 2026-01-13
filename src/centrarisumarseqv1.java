@@ -1,11 +1,12 @@
 import java.util.Locale;
 import java.util.Scanner;
+
 //**********************************
 //        pregunta de examen
 //          de arrays
-// Buscar dentro de la secuencia (v1)
+// Centrar y sumar la secuencia (v1)
 //**********************************
-public class cercardinsseqv1 {
+public class centrarisumarseqv1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
@@ -21,14 +22,6 @@ public class cercardinsseqv1 {
         for (int i = 0; i <tam2; i++) {
             array2[i] = sc.nextInt();
         }
-        for (int i = 0; i < tam2; i++) {
-            int contador = 0;
-            for (int j = 0; j < tam1; j++) {
-                if (array1[j] == array2[i]) {
-                    contador++;
-                }
-            }
-            System.out.println(array2[i] + " " + contador);
-        }
+
     }
 }

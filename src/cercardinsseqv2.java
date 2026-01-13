@@ -1,9 +1,10 @@
 import java.util.Locale;
 import java.util.Scanner;
-//**********************************//
-//        pregunta de examen        //
-//          de arrays               //
-//**********************************//
+//**************************************//
+//        pregunta de examen            //
+//          de arrays                   //
+// Buscar dentro de la secuencia (v2)   //
+//**************************************//
 public class cercardinsseqv2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

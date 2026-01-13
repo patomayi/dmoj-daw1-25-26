@@ -3,6 +3,7 @@ import java.util.Scanner;
 //**********************************//
 //        pregunta de examen        //
 //          de arrays               //
+// Intercalar secuencias            //
 //**********************************//
 public class intercalarseqs {
     public static void main(String[] args) {
