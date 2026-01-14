@@ -17,7 +17,6 @@ public class buscandominas {
                 matriz[f][c] = sc.nextInt();
             }
         }
-
         // Leer primera posición
         int x = sc.nextInt();
         int y = sc.nextInt();
