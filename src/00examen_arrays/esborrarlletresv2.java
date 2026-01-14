@@ -1,10 +1,9 @@
 import java.util.Locale;
 import java.util.Scanner;
-//**********************************
-//        pregunta de examen
-//          de arrays
-// Borrar las letras (v2)
-//**********************************
+//Borrar las letras (v2)
+//Dadas dos secuencias (una con palabras, y la otra con letras),
+// se pide mostrar por pantalla las palabras de la primera lista,
+// una vez se le han borrado todas las letras que aparecen dentro de la segunda lista.
 public class esborrarlletresv2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,11 +1,9 @@
 import java.util.Locale;
 import java.util.Scanner;
-
-//**********************************
-//        pregunta de examen
-//          de arrays
-// Centrar y sumar la secuencia (v1)
-//**********************************
+//Centrar y sumar la secuencia (v1)
+//Dadas dos secuencias de números (una con enteros positivos,
+// y la otra con enteros negativos), se pide centrar las dos
+// secuencias y proceder a sumar sus valores.
 public class centrarisumarseqv1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

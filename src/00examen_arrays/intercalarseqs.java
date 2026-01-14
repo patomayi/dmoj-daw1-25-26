@@ -1,10 +1,10 @@
 import java.util.Locale;
 import java.util.Scanner;
-//**********************************//
-//        pregunta de examen        //
-//          de arrays               //
-// Intercalar secuencias            //
-//**********************************//
+//Intercalar secuencias
+//Dadas dos secuencias de números (una con enteros positivos,
+// y la otra con enteros negativos), se pide mostrarlas
+// por pantalla intercaladas, es decir, alternar un número
+// de la primera secuencia con un número de la segunda (siempre que sea posible).
 public class intercalarseqs {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

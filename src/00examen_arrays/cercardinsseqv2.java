@@ -1,10 +1,9 @@
 import java.util.Locale;
 import java.util.Scanner;
-//**************************************//
-//        pregunta de examen            //
-//          de arrays                   //
-// Buscar dentro de la secuencia (v2)   //
-//**************************************//
+//Buscar dentro de la secuencia (v2)
+//Dadas dos secuencias (una de letras y la otra de palabras),
+// se pide mostrar por pantalla cuántas veces aparecen las letras
+// de la primera secuencia dentro de las palabras de la segunda.
 public class cercardinsseqv2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,12 +1,11 @@
 import java.util.Scanner;
 import java.util.Locale;
-//**********************************
-//        pregunta de examen
-//          de arrays
-// Longitudes múltiples (v1)
-//**********************************
+//Longitudes múltiples (v1)
+//Dadas dos secuencias (una de palabras, y la otra de números enteros positivos),
+// se pide mostrar por pantalla las palabras de la primera secuencia,
+// pero convertida en mayúsculas si la longitud de la palabra es múltiple del número
+// que aparece en la segunda secuencia; de lo contrario hay que convertir a minúsculas.
 public class logmultiplev1 {
-    public class logmultiplev1 {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
