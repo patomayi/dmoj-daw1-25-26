@@ -10,7 +10,17 @@ leer comensales,
 leer 1k arroz y
 leer 1k gambas
 
-coste de paellaMetodo
+leer:
+8
+1.5
+15
+
+mostrar:
+1.0 kg arros
+0.5 kg gambes
+1.5 euros arros
+7.5 euros gambes
+TOTAL: 9.0 euros
  */
 import java.util.Locale;
 import java.util.Scanner;
@@ -20,6 +30,8 @@ public class paellaMetodo {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
         //El teu codi aqui
-
+        int personas = sc.nextInt();
+        int arroz = sc.nextInt();
+        int gambas = sc.nextInt();
     }
 }
