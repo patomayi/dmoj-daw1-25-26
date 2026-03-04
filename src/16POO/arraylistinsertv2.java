@@ -15,6 +15,6 @@ public class arraylistinsertv2 {
             if(pos>0) llista.addLast(num);//llista.add(num)
             else llista.addFirst(num);//llista.add(0,num)
         }
-        llista.stream().forEach(Integer x -> System.out.print(x+" "));
+        //llista.stream().forEach(Integer x -> System.out.print(x+" "));
     }
 }
